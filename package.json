@@ -1,0 +1,29 @@
+{
+  "name": "insure-landing-page",
+  "version": "1.0.0",
+  "description": "A landing page for the INSURE company",
+  "main": "src/scripts/index.ts",
+  "scripts": {
+    "build": "npm run build:css && npm run build:cp-public",
+    "build:css": "postcss ./src/css/index.css -o ./dist/css/index.css",
+    "build:cp-public": "cp -r ./public/** ./dist",
+    "dev": "npm run build:cp-public && npx tailwindcss -i ./src/css/index.css -o ./dist/css/index.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/otodavid/insure-landing-page.git"
+  },
+  "author": "David Ojo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otodavid/insure-landing-page/issues"
+  },
+  "homepage": "https://github.com/otodavid/insure-landing-page#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.3"
+  }
+}
