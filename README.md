@@ -15,7 +15,7 @@ The task given was to build the landing page for an insurance company using the 
 I used the following in developing this project:
 - HTML
 - Tailwindcss
-- Typescript
+- Javascript
 
 ### Deployment
 This project was deployed on [Vercel](https://vercel.com). Vercel is a deployment platform from the creators of Next.js.

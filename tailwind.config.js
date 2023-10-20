@@ -37,6 +37,10 @@ module.exports = {
         '4.5xl': ['2.5rem', 1],
         '5.5xl': ['2.95rem', 1],
       },
+      screens: {
+        '2xl': '1440px',
+        '3xl': '1536px'
+      }
     },
   },
   plugins: [],
