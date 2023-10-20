@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ['./dist/**/*.{html,js}'],
+  content: ['./dist/**/*.{html,js}', './public/**/*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
@@ -19,13 +19,13 @@ module.exports = {
       },
 
       backgroundImage: {
-        'nav-pattern': "url('/src/images/bg-pattern-mobile-nav.svg')",
+        'nav-pattern': "url('/dist/images/bg-pattern-mobile-nav.svg')",
         'intro-pattern-left':
-          "url('/src/images/bg-pattern-intro-left-mobile.svg'), url('/src/images/bg-pattern-intro-right-mobile.svg')",
+          "url('/dist/images/bg-pattern-intro-left-mobile.svg'), url('/dist/images/bg-pattern-intro-right-mobile.svg')",
         'work-pattern-mobile':
-          "url('/src/images/bg-pattern-how-we-work-mobile.svg')",
+          "url('/dist/images/bg-pattern-how-we-work-mobile.svg')",
         'footer-pattern-mobile':
-          "url('/src/images/bg-pattern-footer-mobile.svg')",
+          "url('/dist/images/bg-pattern-footer-mobile.svg')",
       },
 
       backgroundPosition: {
