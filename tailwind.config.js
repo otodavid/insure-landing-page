@@ -20,16 +20,24 @@ module.exports = {
 
       backgroundImage: {
         'nav-pattern': "url('/dist/images/bg-pattern-mobile-nav.svg')",
-        'intro-pattern-left':
+        'hero-pattern-mobile':
           "url('/dist/images/bg-pattern-intro-left-mobile.svg'), url('/dist/images/bg-pattern-intro-right-mobile.svg')",
+        'hero-pattern-desktop':
+          "url('/dist/images/bg-pattern-intro-left-desktop.svg'), url('/dist/images/bg-pattern-intro-right-desktop.svg')",
         'work-pattern-mobile':
           "url('/dist/images/bg-pattern-how-we-work-mobile.svg')",
+        'work-pattern-desktop':
+          "url('/dist/images/bg-pattern-how-we-work-desktop.svg')",
         'footer-pattern-mobile':
           "url('/dist/images/bg-pattern-footer-mobile.svg')",
+        'footer-pattern-desktop':
+          "url('/dist/images/bg-pattern-footer-desktop.svg')",
+        'no-image': 'none',
       },
 
       backgroundPosition: {
-        'intro-position': 'left top, right bottom',
+        'hero-position-mobile': 'left top, right bottom',
+        'hero-position-desktop': 'left bottom, right -5rem',
       },
 
       fontSize: {
@@ -39,8 +47,8 @@ module.exports = {
       },
       screens: {
         '2xl': '1440px',
-        '3xl': '1536px'
-      }
+        '3xl': '1536px',
+      },
     },
   },
   plugins: [],
