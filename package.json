@@ -7,8 +7,7 @@
     "build": "npm run build:css && npm run build:cp-public",
     "build:css": "postcss ./src/css/index.css -o ./dist/css/index.css",
     "build:cp-public": "cp -r ./public/** ./dist",
-    "dev": "npm run build:cp-public && npx tailwindcss -i ./src/css/index.css -o ./dist/css/index.css --watch",
-    "dev1": "npx tailwindcss -i ./src/css/index.css -o ./dist/css/index.css --watch"
+    "dev": "npx tailwindcss -i ./src/css/index.css -o ./dist/css/index.css --watch"
   },
   "repository": {
     "type": "git",
